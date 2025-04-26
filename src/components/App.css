@@ -1,0 +1,90 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding-bottom: 2rem;
+  }
+  
+  /* Smooth transitions between views */
+  .container {
+    animation: fadeIn 0.4s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* General card styles */
+  .card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Alert styles */
+  .alert {
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alert-danger {
+    background-color: rgba(255, 77, 77, 0.1);
+    color: #dc3545;
+  }
+  
+  /* Typography */
+  h4 {
+    font-weight: 600;
+  }
+  
+  h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  p {
+    color: #495057;
+    line-height: 1.6;
+  }
+  
+  /* Lists */
+  ol, ul {
+    padding-left: 1.5rem;
+    color: #495057;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }

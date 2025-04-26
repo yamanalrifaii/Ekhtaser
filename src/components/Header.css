@@ -1,0 +1,28 @@
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    padding: 0.7rem 1rem;
+  }
+  
+  .brand-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .navbar-text {
+    font-style: italic;
+    opacity: 0.9;
+    margin-left: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      margin-right: auto;
+    }
+  }

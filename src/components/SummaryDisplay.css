@@ -1,0 +1,121 @@
+.summary-display-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .main-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #343a40;
+    border-left: 4px solid #6c63ff;
+    padding-left: 10px;
+  }
+  
+  .summary-card,
+  .key-points-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .summary-card:hover,
+  .key-points-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  }
+  
+  .summary-text {
+    line-height: 1.7;
+    color: #343a40;
+    text-align: justify;
+  }
+  
+  .key-points-list {
+    padding-left: 1.2rem;
+  }
+  
+  .key-point-item {
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+    color: #343a40;
+  }
+  
+  .key-point-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .completion-time {
+    display: block;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  .new-summary-btn {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    transition: all 0.3s ease;
+  }
+  
+  .new-summary-btn:hover {
+    background-color: #564dff;
+    border-color: #564dff;
+    transform: translateY(-2px);
+  }
+  
+  .video-thumbnail {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .watch-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  
+  .watch-button:hover {
+    opacity: 1;
+    color: #ff4d4d;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    .summary-display-container {
+      padding: 0.5rem;
+    }
+    
+    .watch-button {
+      font-size: 2rem;
+    }
+  }

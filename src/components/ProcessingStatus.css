@@ -1,0 +1,79 @@
+.processing-status-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .status-info {
+    margin-bottom: 1.5rem;
+  }
+  
+  .status-text {
+    font-weight: 500;
+  }
+  
+  .status-queued {
+    color: #6c757d;
+  }
+  
+  .status-extracting_audio {
+    color: #fd7e14;
+  }
+  
+  .status-transcribing {
+    color: #20c997;
+  }
+  
+  .status-summarizing {
+    color: #0dcaf0;
+  }
+  
+  .status-completed {
+    color: #198754;
+  }
+  
+  .status-error {
+    color: #dc3545;
+  }
+  
+  .progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+  }
+  
+  .processing-info {
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 1rem;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .processing-status-container {
+      padding: 0.5rem;
+    }
+  }

@@ -1,0 +1,60 @@
+.url-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #564dff;
+    border-color: #564dff;
+    transform: translateY(-2px);
+  }
+  
+  .btn-primary:disabled {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    opacity: 0.65;
+  }
+  
+  @media (max-width: 768px) {
+    .url-form-container {
+      padding: 0.5rem;
+    }
+  }
